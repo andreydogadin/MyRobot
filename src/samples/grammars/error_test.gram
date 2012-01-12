@@ -1,0 +1,28 @@
+/**
+A sample grammar demonstrating detection of JSGF errors in a grammar.
+*/
+
+//#JSGF V1.0; //commented out to give error
+
+//grammar grammars.error_test; //commented out to give error
+
+<alt> = (<NULL>{0} | something | <NULL> {1} | something else);
+
+<gate> = <NULL> 2};
+
+public <test1> = hello <gate> ({1} there);
+
+<blankRule> =   ;
+
+<grammars.error_test.test> = test;
+
+<name1> = Michael | | Mary; // not legal
+<name2> = Michael | Mary | ; // not legal
+
+<test1> = ( );
+<test2> = [ ];
+
+<badRule1> = <action> * {tag1}; // not legal
+<badRule2> = <action> {tag1} +; // not legal
+
+

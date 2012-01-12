@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/faint/!svn/ver/2/trunk/src/de/offis/faint/detection/plugins/betaface/generated
+END
+BetafaceFaceFeature.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/faint/!svn/ver/2/trunk/src/de/offis/faint/detection/plugins/betaface/generated/BetafaceFaceFeature.java
+END
+BetafaceRect.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/faint/!svn/ver/2/trunk/src/de/offis/faint/detection/plugins/betaface/generated/BetafaceRect.java
+END
+BetafaceWebService.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/faint/!svn/ver/2/trunk/src/de/offis/faint/detection/plugins/betaface/generated/BetafaceWebService.java
+END
+BetafaceWebServiceSoapStub.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/faint/!svn/ver/2/trunk/src/de/offis/faint/detection/plugins/betaface/generated/BetafaceWebServiceSoapStub.java
+END
+BetafaceDetectedFace.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/faint/!svn/ver/2/trunk/src/de/offis/faint/detection/plugins/betaface/generated/BetafaceDetectedFace.java
+END
+ArrayOfDoubleHolder.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/faint/!svn/ver/2/trunk/src/de/offis/faint/detection/plugins/betaface/generated/ArrayOfDoubleHolder.java
+END
+BetafaceWebServiceSoap.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/faint/!svn/ver/2/trunk/src/de/offis/faint/detection/plugins/betaface/generated/BetafaceWebServiceSoap.java
+END
+BetafaceImage.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/faint/!svn/ver/2/trunk/src/de/offis/faint/detection/plugins/betaface/generated/BetafaceImage.java
+END
+BetafaceWebServiceLocator.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/faint/!svn/ver/2/trunk/src/de/offis/faint/detection/plugins/betaface/generated/BetafaceWebServiceLocator.java
+END
+BetafaceWebServiceSoap12Stub.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svnroot/faint/!svn/ver/2/trunk/src/de/offis/faint/detection/plugins/betaface/generated/BetafaceWebServiceSoap12Stub.java
+END
+FeatureType.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/faint/!svn/ver/2/trunk/src/de/offis/faint/detection/plugins/betaface/generated/FeatureType.java
+END

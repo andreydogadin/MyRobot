@@ -1,0 +1,20 @@
+#JSGF V1.0;
+grammar rover;
+
+public <command> = eva {Eva}
+                 | close application {Exit}
+                 | tell me the weather {GetWeather}
+                 | tell me the weather forecast {GetWeatherForecast}
+                 | play [some] music {PlayMusic}
+                 | classic [please] {Classic}
+                 | ballads [please] {Ballads}
+                 | rock [please] {RussianRock}
+                 | stop music {StopMusic}
+                 | stop alarm {StopAlarm}
+                 | set alarm {SetAlarm}
+                 | set alarm to seven [o'clock] {SetAlarm 07}
+                 | set alarm to eight [o'clock] {SetAlarm 08}
+                 | set alarm to nine [o'clock] {SetAlarm 09}
+                 | check internet connection {CheckInternetConnection}
+                 | what time is it [now] {GetTime};
+

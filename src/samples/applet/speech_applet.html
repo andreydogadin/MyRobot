@@ -1,0 +1,82 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.79 [en] (Windows NT 5.0; U) [Netscape]">
+   <title>Speech Applet</title>
+</head>
+<body>
+
+<h1>
+<font face="Verdana"><font size=+1>Speech Applet Demo</font></font></h1>
+
+<table BORDER WIDTH="100%" >
+<tr>
+<td ROWSPAN="2"><font face="Verdana"><font size=-1>This applet has been
+tested with native VMs on:</font></font>
+<ul>
+<li>
+<font face="Verdana"><font size=-1>Internet Explorer 5.5 with Microsoft
+VM for Java Version 5.0 - the ServicePack 2 for IE 5.5 upgrades the VM
+to version 5.</font></font></li>
+
+<li>
+<font face="Verdana"><font size=-1>Netscape 4.7 - Netscape will ask you
+whether you want to grant permissions to use native code, which you should
+do if you want to run the applet.</font></font></li>
+</ul>
+<font face="Verdana"><font size=-1>In addition, you must</font></font>
+<ul>
+<li>
+<font face="Verdana"><font size=-1>Install CloudGarden's TalkingJava SDK
+1.6.0 or better</font></font></li>
+
+<li>
+<font face="Verdana"><font size=-1>Install the JSAPI for applets, using
+the installer, or copy the cgjsapiNNN.dll (eg. cgjsapi160.dll) and cgjsapi.jar
+files to specific locations - as described <a href="../../docs/applets.html">here</a>.</font></font></li>
+</ul>
+<font face="Verdana"><font size=-1>Alternatively, if the Java Plugin is
+used to run Java applets (on Netscape 6 &amp; 7 or IE 6, for example),
+you must</font></font>
+<ul>
+<li>
+<font face="Verdana"><font size=-1>install cloudgarden's JSAPI files in
+the JRE being used by the plugin</font></font></li>
+
+<li>
+<font face="Verdana"><font size=-1>modify the java policy file as described
+<a href="../../docs/security.html">here</a></font></font></li>
+</ul>
+</td>
+
+<td ALIGN=LEFT VALIGN=TOP><font face="Verdana"><font size=-1>Type text
+in the space and press the button to hear it spoken.</font></font>
+<p><applet code="samples.applet.SpeechApplet.class" name="Speaker"
+width=400 height=200 MAYSCRIPT="true" codebase="../.."></applet>
+<br>&nbsp;
+<p><font face="Verdana"><font size=-1>It's also possible to make the applet
+talk using JavaScript.</font></font>
+<br><form><input type=button onClick="javascript:speak('Hello from Java-script\n')" value="Hello from Java-script"></form>
+<p><font face="Verdana"><font size=-1><a href="" onMouseOver="javascript:speak('and here is a mouse over demo')">....and
+here is a mouse-over demo</a></font></font><script>
+var speakables="";
+
+function speak(str) {
+   speakables = str;
+}
+
+function getSpeakables() {
+  tmp = speakables;
+  speakables = "";
+  return tmp;
+}
+</script>
+</td>
+</tr>
+</table>
+
+<ol>&nbsp;</ol>
+
+</body>
+</html>

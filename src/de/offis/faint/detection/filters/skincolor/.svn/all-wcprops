@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/faint/!svn/ver/2/trunk/src/de/offis/faint/detection/filters/skincolor
+END
+HS_Table.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/faint/!svn/ver/2/trunk/src/de/offis/faint/detection/filters/skincolor/HS_Table.java
+END
+SkinColorSettingsPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/faint/!svn/ver/2/trunk/src/de/offis/faint/detection/filters/skincolor/SkinColorSettingsPanel.java
+END
+SkinColorFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/faint/!svn/ver/2/trunk/src/de/offis/faint/detection/filters/skincolor/SkinColorFilter.java
+END
+hstable.dat
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/faint/!svn/ver/2/trunk/src/de/offis/faint/detection/filters/skincolor/hstable.dat
+END
+TableBuilder.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/faint/!svn/ver/2/trunk/src/de/offis/faint/detection/filters/skincolor/TableBuilder.java
+END

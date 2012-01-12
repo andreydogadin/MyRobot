@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/faint/!svn/ver/2/trunk/src/de/offis/faint/gui/events
+END
+EventOpenFolder.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/faint/!svn/ver/2/trunk/src/de/offis/faint/gui/events/EventOpenFolder.java
+END
+EventUpdateAnnotationPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/faint/!svn/ver/2/trunk/src/de/offis/faint/gui/events/EventUpdateAnnotationPanel.java
+END
+EventShowFacesOfPerson.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/faint/!svn/ver/2/trunk/src/de/offis/faint/gui/events/EventShowFacesOfPerson.java
+END
+EventRenamePerson.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/faint/!svn/ver/2/trunk/src/de/offis/faint/gui/events/EventRenamePerson.java
+END
+EventRegionSelectionChanged.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/faint/!svn/ver/2/trunk/src/de/offis/faint/gui/events/EventRegionSelectionChanged.java
+END
+EventRecognizeFace.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/faint/!svn/ver/2/trunk/src/de/offis/faint/gui/events/EventRecognizeFace.java
+END
+EventOpenImage.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/faint/!svn/ver/2/trunk/src/de/offis/faint/gui/events/EventOpenImage.java
+END
+EventChangePlugin.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/faint/!svn/ver/2/trunk/src/de/offis/faint/gui/events/EventChangePlugin.java
+END
+EventDeleteRegion.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/faint/!svn/ver/2/trunk/src/de/offis/faint/gui/events/EventDeleteRegion.java
+END
+EventShowTab.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/faint/!svn/ver/2/trunk/src/de/offis/faint/gui/events/EventShowTab.java
+END
+EventModifyTrainingData.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/faint/!svn/ver/2/trunk/src/de/offis/faint/gui/events/EventModifyTrainingData.java
+END
+EventDetectFacesOnCurrentImage.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/faint/!svn/ver/2/trunk/src/de/offis/faint/gui/events/EventDetectFacesOnCurrentImage.java
+END
+EventChangeScanWindowSize.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/faint/!svn/ver/2/trunk/src/de/offis/faint/gui/events/EventChangeScanWindowSize.java
+END
+EventClassifyRegion.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/faint/!svn/ver/2/trunk/src/de/offis/faint/gui/events/EventClassifyRegion.java
+END
+IEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/faint/!svn/ver/2/trunk/src/de/offis/faint/gui/events/IEvent.java
+END
+EventDeletePerson.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/faint/!svn/ver/2/trunk/src/de/offis/faint/gui/events/EventDeletePerson.java
+END
+EventShutdownMainFrame.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/faint/!svn/ver/2/trunk/src/de/offis/faint/gui/events/EventShutdownMainFrame.java
+END
+EventAddKnownPerson.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/faint/!svn/ver/2/trunk/src/de/offis/faint/gui/events/EventAddKnownPerson.java
+END
+EventUpdateMenuBar.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/faint/!svn/ver/2/trunk/src/de/offis/faint/gui/events/EventUpdateMenuBar.java
+END

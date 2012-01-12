@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/faint/!svn/ver/2/trunk/src/de/offis/faint/detection/plugins/betaface
+END
+betalogo.png
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/faint/!svn/ver/2/trunk/src/de/offis/faint/detection/plugins/betaface/betalogo.png
+END
+BetafaceDetection.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/faint/!svn/ver/2/trunk/src/de/offis/faint/detection/plugins/betaface/BetafaceDetection.java
+END
+BetafaceSettingsPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/faint/!svn/ver/2/trunk/src/de/offis/faint/detection/plugins/betaface/BetafaceSettingsPanel.java
+END

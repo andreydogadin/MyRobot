@@ -1,0 +1,12 @@
+/**
+Tests made-up words and also a Spanish word with a non-English character
+*/
+
+#JSGF V1.0;
+
+grammar grammars.testGram;
+
+//public <test1> = blah doh blurble blunk;
+//public <test2> = hublab dalboh grunkle trank;
+
+public <sim> = simulación ;

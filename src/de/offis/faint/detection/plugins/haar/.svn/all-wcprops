@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/faint/!svn/ver/28/trunk/src/de/offis/faint/detection/plugins/haar
+END
+FeatureRegion.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/faint/!svn/ver/27/trunk/src/de/offis/faint/detection/plugins/haar/FeatureRegion.java
+END
+ObjectDetector.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/faint/!svn/ver/27/trunk/src/de/offis/faint/detection/plugins/haar/ObjectDetector.java
+END
+FeatureClassifier.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/faint/!svn/ver/27/trunk/src/de/offis/faint/detection/plugins/haar/FeatureClassifier.java
+END
+MultiscaleDetection.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/faint/!svn/ver/27/trunk/src/de/offis/faint/detection/plugins/haar/MultiscaleDetection.java
+END
+ImageModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/faint/!svn/ver/27/trunk/src/de/offis/faint/detection/plugins/haar/ImageModel.java
+END
+Cascades.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/faint/!svn/ver/27/trunk/src/de/offis/faint/detection/plugins/haar/Cascades.java
+END
+GroupingPolicy.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/faint/!svn/ver/27/trunk/src/de/offis/faint/detection/plugins/haar/GroupingPolicy.java
+END
+haarcascade_frontalface_alt.bin
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/faint/!svn/ver/27/trunk/src/de/offis/faint/detection/plugins/haar/haarcascade_frontalface_alt.bin
+END
+DefaultClassifierStage.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/faint/!svn/ver/27/trunk/src/de/offis/faint/detection/plugins/haar/DefaultClassifierStage.java
+END
+haarcascade_frontalface_default.bin
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/faint/!svn/ver/27/trunk/src/de/offis/faint/detection/plugins/haar/haarcascade_frontalface_default.bin
+END
+HistogramEqualizer.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/faint/!svn/ver/28/trunk/src/de/offis/faint/detection/plugins/haar/HistogramEqualizer.java
+END
+HaarClassifierDetection.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/faint/!svn/ver/28/trunk/src/de/offis/faint/detection/plugins/haar/HaarClassifierDetection.java
+END
+HaarClassifierSettingsPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/faint/!svn/ver/28/trunk/src/de/offis/faint/detection/plugins/haar/HaarClassifierSettingsPanel.java
+END
+ValueClassifier.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/faint/!svn/ver/27/trunk/src/de/offis/faint/detection/plugins/haar/ValueClassifier.java
+END
+Classifier.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/faint/!svn/ver/27/trunk/src/de/offis/faint/detection/plugins/haar/Classifier.java
+END
+ClassifierCascade.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/faint/!svn/ver/27/trunk/src/de/offis/faint/detection/plugins/haar/ClassifierCascade.java
+END
+haarcascade_frontalface_alt_tree.bin
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/faint/!svn/ver/27/trunk/src/de/offis/faint/detection/plugins/haar/haarcascade_frontalface_alt_tree.bin
+END
+Feature.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/faint/!svn/ver/27/trunk/src/de/offis/faint/detection/plugins/haar/Feature.java
+END
+haarcascade_frontalface_alt2.bin
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/faint/!svn/ver/27/trunk/src/de/offis/faint/detection/plugins/haar/haarcascade_frontalface_alt2.bin
+END
+ImageStatistics.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/faint/!svn/ver/27/trunk/src/de/offis/faint/detection/plugins/haar/ImageStatistics.java
+END
+DefaultClassifierCascade.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/faint/!svn/ver/27/trunk/src/de/offis/faint/detection/plugins/haar/DefaultClassifierCascade.java
+END
+ScaledImageDetection.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/faint/!svn/ver/27/trunk/src/de/offis/faint/detection/plugins/haar/ScaledImageDetection.java
+END

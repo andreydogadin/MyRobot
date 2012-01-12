@@ -1,0 +1,20 @@
+/* some text comments
+and some more */
+
+#JSGF V1.0;
+
+grammar grammars.numbers;
+
+<units> = one | two | three | four | five | six | seven | eight | nine;
+<teens> = eleven | twelve | thirteen | fourteen | fifteen | 
+	sixteen | seventeen | eighteen | nineteen;
+<tens> = ten | twenty | thirty | forty | fifty | sixty | seventy |
+	eighty | ninety;
+<hundreds> = <units> hundred;
+
+public <number> = <hundreds> | <tens> | <teens> | <units> |
+	(<hundreds> [and] <tens>) |
+	(<hundreds> [and] <teens>) |
+	(<hundreds> [and] <units>) |
+	(<tens> [and] <units>) |
+	(<hundreds> [and] <tens> [and] <units>);

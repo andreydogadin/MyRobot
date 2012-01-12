@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/faint/!svn/ver/16/trunk/src/de/offis/faint/gui/photobrowser
+END
+ScanWindowSlider.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/faint/!svn/ver/2/trunk/src/de/offis/faint/gui/photobrowser/ScanWindowSlider.java
+END
+AnnotationTable.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/faint/!svn/ver/2/trunk/src/de/offis/faint/gui/photobrowser/AnnotationTable.java
+END
+ImagePanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/faint/!svn/ver/2/trunk/src/de/offis/faint/gui/photobrowser/ImagePanel.java
+END
+ImageViewBehaviour.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/faint/!svn/ver/2/trunk/src/de/offis/faint/gui/photobrowser/ImageViewBehaviour.java
+END
+ThumbnailPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/faint/!svn/ver/2/trunk/src/de/offis/faint/gui/photobrowser/ThumbnailPanel.java
+END
+ImageCursorBehaviour.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/faint/!svn/ver/2/trunk/src/de/offis/faint/gui/photobrowser/ImageCursorBehaviour.java
+END
+ThumbnailLoadingThread.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/faint/!svn/ver/2/trunk/src/de/offis/faint/gui/photobrowser/ThumbnailLoadingThread.java
+END
+AnnotationPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/faint/!svn/ver/2/trunk/src/de/offis/faint/gui/photobrowser/AnnotationPanel.java
+END
+BrowserTab.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/faint/!svn/ver/16/trunk/src/de/offis/faint/gui/photobrowser/BrowserTab.java
+END
+ClassificationPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/faint/!svn/ver/2/trunk/src/de/offis/faint/gui/photobrowser/ClassificationPanel.java
+END
+ThumbnailTable.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/faint/!svn/ver/2/trunk/src/de/offis/faint/gui/photobrowser/ThumbnailTable.java
+END
+BrowserMenuBar.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/faint/!svn/ver/2/trunk/src/de/offis/faint/gui/photobrowser/BrowserMenuBar.java
+END
+DetectionDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/faint/!svn/ver/2/trunk/src/de/offis/faint/gui/photobrowser/DetectionDialog.java
+END

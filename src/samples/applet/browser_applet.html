@@ -1,0 +1,67 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.79 [en] (Windows NT 5.0; U) [Netscape]">
+   <title>Speech Applet</title>
+
+<!-- 
+This page is designed to be used as part of the framset of browser.html
+To see it operating correctly, open browser.html in a browser.
+-->
+
+<script>
+
+// Make sure that this page is not opened except as 
+// a frame in the "browser.html" frameset
+if(parent.frames.length < 2) location="browser.html";
+
+function getMainURL() {
+    return parent.frames["MAIN"].location.toString();
+}
+function setup() {
+    ie = 0;
+    if(navigator.appName == "Microsoft Internet Explorer" ) ie = 1;
+    doc = parent.frames["MAIN"].document;
+    links = doc.links;
+    document.BrowserApplet.startGrammars();
+    for(i=0;i<links.length;i++) {
+	if(ie == 1) {
+	    document.BrowserApplet.addLink(links[i].href, links[i].innerHTML);  //for ie
+	} else {
+	    document.BrowserApplet.addLink(links[i].href, links[i].text); //for netscape
+	}
+    }
+    document.BrowserApplet.commitGrammars();
+}
+
+function pageDown() {
+    parent.frames["MAIN"].scrollBy(0,300);
+}
+
+function pageUp() {
+    parent.frames["MAIN"].scrollBy(0,-300);
+}
+
+function goTo(url) {
+    //this doesn't update history list, so goBack and goForward won't work!
+    parent.frames["MAIN"].location = url;
+}
+
+function goBack() {
+    parent.frames["MAIN"].history.back();
+}
+
+function goForward() {
+    parent.frames["MAIN"].history.forward();
+}
+</script>
+
+</head>
+
+<body bgcolor="#666666">
+<applet code="samples.applet.BrowserApplet.class" name="BrowserApplet"
+width=300 height=25 MAYSCRIPT="true" codebase="../.."></applet>
+
+</body>
+</html>

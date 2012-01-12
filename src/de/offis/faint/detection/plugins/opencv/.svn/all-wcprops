@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/faint/!svn/ver/2/trunk/src/de/offis/faint/detection/plugins/opencv
+END
+highgui100.dll
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/faint/!svn/ver/2/trunk/src/de/offis/faint/detection/plugins/opencv/highgui100.dll
+END
+license.txt
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/faint/!svn/ver/2/trunk/src/de/offis/faint/detection/plugins/opencv/license.txt
+END
+haarcascade_frontalface_alt_tree.xml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/faint/!svn/ver/2/trunk/src/de/offis/faint/detection/plugins/opencv/haarcascade_frontalface_alt_tree.xml
+END
+haarcascade_frontalface_alt.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/faint/!svn/ver/2/trunk/src/de/offis/faint/detection/plugins/opencv/haarcascade_frontalface_alt.xml
+END
+libguide40.dll
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/faint/!svn/ver/2/trunk/src/de/offis/faint/detection/plugins/opencv/libguide40.dll
+END
+cv100.dll
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/faint/!svn/ver/2/trunk/src/de/offis/faint/detection/plugins/opencv/cv100.dll
+END
+haarcascade_frontalface_alt2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/faint/!svn/ver/2/trunk/src/de/offis/faint/detection/plugins/opencv/haarcascade_frontalface_alt2.xml
+END
+opencv.dll
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/faint/!svn/ver/2/trunk/src/de/offis/faint/detection/plugins/opencv/opencv.dll
+END
+haarcascade_frontalface_default.xml
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/faint/!svn/ver/2/trunk/src/de/offis/faint/detection/plugins/opencv/haarcascade_frontalface_default.xml
+END
+OpenCVDetection.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/faint/!svn/ver/2/trunk/src/de/offis/faint/detection/plugins/opencv/OpenCVDetection.java
+END
+OpenCVSettingsPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/faint/!svn/ver/2/trunk/src/de/offis/faint/detection/plugins/opencv/OpenCVSettingsPanel.java
+END
+haarcascade_profileface.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/faint/!svn/ver/2/trunk/src/de/offis/faint/detection/plugins/opencv/haarcascade_profileface.xml
+END
+cxcore100.dll
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/faint/!svn/ver/2/trunk/src/de/offis/faint/detection/plugins/opencv/cxcore100.dll
+END

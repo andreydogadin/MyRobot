@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE attributes PUBLIC "-//NetBeans//DTD DefaultAttributes 1.0//EN" "http://www.netbeans.org/dtds/attributes-1_0.dtd">
+<attributes version="1.0">
+    <fileobject name="testJSML.xml">
+        <attr name="org.apache.tools.ant.module.loader.AntProjectDataLoader.KNOWN_ANT_FILE" boolvalue="false"/>
+    </fileobject>
+    <fileobject name="TestAudioListener.java">
+        <attr name="class_dependency_javax.speech.recognition.RecognizerAudioAdapter" stringvalue="TestAudioListener"/>
+    </fileobject>
+</attributes>

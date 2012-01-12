@@ -1,0 +1,37 @@
+/**
+
+A sample grammar demonstrating use of <NULL> and <VOID> rules for
+gating and alternative representation of RuleCounts.
+
+For fuller description of <NULL> and <VOID> rules, see Sun's JSGF documentation
+
+*/
+
+#JSGF V1.0;
+
+grammar grammars.null_void_test;
+
+//Demonstrate gating - when <gate> is <NULL>, it is ignored in sequence,
+//but when <gate> is <VOID> it voids whole sequence.
+<gate> = <NULL>;
+public <test1> = hello <gate> there;
+
+<gate> = <VOID>;
+public <test2> = hello <gate> there;
+
+//Equivalent to <test3> = [hello | there];
+public <test3> = hello | <NULL> | there;
+
+//<VOID> ignored in RuleAlternate
+public <test4> = good morning (hello | <VOID> | there);
+
+//Right-recursion, equivalent to <test5> = there*;
+//though saved internally as <test5> = [there <test5>];
+//ViaVoice engine doesn't accept this rule, but Microsoft engine does.
+//public <test5> = <NULL> | there <test5>;
+
+public <test6> = twenty {2} (<NULL> {0} | one {1}) bananas;
+public <test7> = twenty {2} (<NULL> {0} | one {1});
+
+//This rule should throw an error
+//public <test8> = twenty {2} (<NULL> {0} | one {1} | <NULL> {error}) bananas;
