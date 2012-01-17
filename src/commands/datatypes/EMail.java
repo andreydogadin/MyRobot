@@ -23,4 +23,9 @@ public class EMail {
     public String getTopic() {
         return topic;
     }
+
+    @Override
+    public String toString() {
+        return String.format("Mail from %s. %s.\n", this.author, this.topic);
+    }
 }

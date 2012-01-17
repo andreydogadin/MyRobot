@@ -28,10 +28,16 @@ public class RobotFaceController {
         MyRobot.getInstance().getFace().updateMemory(MyRobot.getInstance().getMemory().getCurrentMemory());
     }
 
+
+    public void updatePlatformOnOff(){
+        MyRobot.getInstance().getFace().updatePlatformOnOff(MyRobot.getInstance().isPlatformOn());
+    }
+
     public void updateFace(){
         updateRecognizerState();
         updateLaptopAkkuState();
         updatePlatformAkkuState();
         updateMemory();
+        updatePlatformOnOff();
     }
 }

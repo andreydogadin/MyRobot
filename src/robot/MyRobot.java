@@ -66,8 +66,9 @@ public class MyRobot extends RobotPlatform {
     public String getStatus()
     {
         String result;
-        result = String.format("Platform battery is charged for %s percents. ", this.platformAkku);
-        result += String.format("Laptop battery is charged for %s percents. ", this.laptopAkku);
+        result = String.format("Platform battery is charged for %s percents.\n ", this.platformAkku);
+        result += String.format("Laptop battery is charged for %s percents. \n", this.laptopAkku);
+        result += String.format("Platform is ON: %s \n", this.isPlatformOn().toString());
         return result;
     }
 
@@ -89,7 +90,7 @@ public class MyRobot extends RobotPlatform {
     }
 
     public void release() {
-        super.Release();
+        super.release();
         if (this.getSpeechSynth() != null) this.getSpeechSynth().Release();
         if (this.getRecognizer() != null) this.getRecognizer().forceFinalize(true);
     }

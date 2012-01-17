@@ -1,7 +1,12 @@
 package commands.commandsImpl;
 
 import commands.RobotCommand;
+import commands.datatypes.EMail;
+import commands.datatypes.EMailAddress;
 import robot.MyRobot;
+import robot.media.network.mail.EMailFetcher;
+
+import java.util.ArrayList;
 
 /**
  * Created by IntelliJ IDEA.
@@ -14,9 +19,16 @@ public class CheckMail extends RobotCommand{
     @Override
     public void execute(MyRobot robot) {
         if (this.getParam().isEmpty())
-            this.resultTarget.outResult("What kind of music you want to listen?");
+            this.resultTarget.outResult("No person was defined");
         else {
-            this.resultTarget.outResult(this.getParam());
+            EMailAddress address = EMailAddress.getEMailAddressByName(this.getParam());
+            EMailFetcher fetcher = new EMailFetcher(address);
+            ArrayList<EMail> emails = fetcher.fetch();
+            StringBuilder sb = new StringBuilder();
+            for (EMail e: emails){
+                sb.append(e.toString());
+            }
+            this.resultTarget.outResult(sb.toString());
         }
     }
 }

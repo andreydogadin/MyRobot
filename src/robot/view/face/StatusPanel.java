@@ -11,7 +11,7 @@ import java.awt.*;
  * To change this template use File | Settings | File Templates.
  */
    public class StatusPanel extends JPanel {
-        protected JButton recognizerState, laptopAkku, platformAkku;
+        protected JButton recognizerState, laptopAkku, platformAkku, platformOnOff;
 
         public StatusPanel() {
 
@@ -26,10 +26,14 @@ import java.awt.*;
             platformAkku = new JButton("NA");
             platformAkku.setEnabled(false);
 
+            platformOnOff = new JButton("NA");
+            platformOnOff.setEnabled(false);
+
             //Add Components to this container, using the default FlowLayout.
             add(recognizerState);
             add(laptopAkku);
             add(platformAkku);
+            add(platformOnOff);
             this.setLayout(new GridLayout(1,3));
         }
     }

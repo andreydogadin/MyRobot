@@ -58,12 +58,23 @@ public class RobotFace extends JFrame {
     public void updateMemory(HashMap<String, Memory.MemoryItem> memoryData){
         this.memoryPanel.setData(memoryData);
     }
+
+    public void updatePlatformOnOff(Boolean value){
+        statusPanel.platformOnOff.setText(value.toString());
+        statusPanel.platformOnOff.setBackground(getColorForBoolean(value));
+    }
+
     private Color getColorForValue(Integer value)
     {
         if (value <= 25) return Color.RED;
         if (value > 25 && value <= 85) return Color.YELLOW;
         if (value > 85) return Color.GREEN;
         return Color.BLACK;
+    }
+    
+    private Color getColorForBoolean(Boolean value){
+        if (value) return Color.GREEN;
+        else return Color.RED;
     }
 
 }

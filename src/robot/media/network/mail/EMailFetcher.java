@@ -34,9 +34,9 @@ public class EMailFetcher {
             System.out.println(count + " total messages");
             ArrayList<EMail> result = new ArrayList<EMail>();
 
-            for (int i = 1; i <= Math.min(count, MSG_TO_READ_CNT); i++) {
+            for (int i = 0; i < Math.min(count, MSG_TO_READ_CNT); i++) {
                 // Get  a message by its sequence number
-                Message m = fldr.getMessage(i);
+                Message m = fldr.getMessage(count - i);
 
                 // Get some headers
                 Date date = m.getSentDate();

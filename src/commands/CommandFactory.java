@@ -38,22 +38,4 @@ public class CommandFactory {
             result.setResultTarget(inputString.getTarget());
         return result;
     }
-
-    private static String getClassFullName(String abbreviation) {
-        String fullName = null;
-        String matchPattern = "";
-        abbreviation = abbreviation.toUpperCase();
-        File commandDir = new File(RobotConsts.COMMANDS_PATH);
-        String[] commands = commandDir.list();
-        for (char c : abbreviation.toCharArray())
-            matchPattern += c + "\\w*";
-        matchPattern += ".java";
-        Pattern p = Pattern.compile(matchPattern);
-        for (String command : commands) {
-            Matcher m = p.matcher(command);
-            if (m.matches())
-                fullName = command.substring(0, command.indexOf("."));
-        }
-        return fullName;
-    }
 }

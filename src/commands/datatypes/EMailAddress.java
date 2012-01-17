@@ -1,5 +1,7 @@
 package commands.datatypes;
 
+import utils.RobotConsts;
+
 /**
  * Created by IntelliJ IDEA.
  * User: Robot
@@ -14,7 +16,7 @@ public class EMailAddress {
     private String pop3Host = "pop.mail.ru";
     private Integer pop3Port = 110;
 
-    public EMailAddress(String name, String password, String email) {
+    public EMailAddress(String name, String email, String password) {
         this.name = name;
         this.password = password;
         this.email = email;
@@ -38,5 +40,13 @@ public class EMailAddress {
 
     public String getEmail() {
         return email;
+    }
+    
+    public static EMailAddress getEMailAddressByName(String name){
+        for(EMailAddress e : RobotConsts.eMailAddresses){
+            if (e.getName().equalsIgnoreCase(name))
+                return e;
+        }
+        return null;
     }
 }

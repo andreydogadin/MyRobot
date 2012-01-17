@@ -3,6 +3,7 @@ package robothreads;
 import commands.CommandDispatcher;
 import commands.commandsImpl.Alarm;
 import commands.commandsImpl.CheckInternetConnection;
+import commands.commandsImpl.RobotGetOnOff;
 import robot.MyRobot;
 import robothreads.abstracts.RobotThread;
 import utils.Utils;
@@ -31,6 +32,7 @@ public class MaintainThread extends RobotThread {
 
             if (second10 == 0) {
                 second10 = second10Init;
+                CommandDispatcher.getInstance().addCommand(new RobotGetOnOff());
                 MyRobot.getInstance().getFaceController().updateFace();
             }
 
@@ -38,7 +40,7 @@ public class MaintainThread extends RobotThread {
                 second30 = second30Init;
                 CommandDispatcher.getInstance().addCommand(new CheckInternetConnection());
                 CommandDispatcher.getInstance().addCommand(new Alarm());
-                //CommandDispatcher.getInstance().addCommand(new CheckSensors());
+                //CommandDispatcher.getInstance().addCommand(new RobotCheckSensors());
                 //CommandDispatcher.getInstance().addCommand(new Test());
             }
             Utils.sleep(second);

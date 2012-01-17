@@ -9,7 +9,6 @@ package robot.createsdk;
  */
 public class CreateCOI {
     public static byte START = (byte) 128;
-    public static byte DRIVE = (byte) 145;
     public static byte DRIVE_DIRECT = (byte) 145;
 
     public static byte SPEED = (byte) 150;
@@ -35,4 +34,11 @@ public class CreateCOI {
     public static byte AKKU_CAPACITY = (byte) 25;
     public static byte AKKU_CAPACITY_TOTAL = (byte) 26;
     public static byte OI_MODE = (byte) 35;
+
+    public static byte AT_GET_STATUS  = (byte)'G';
+    public static byte AT_SET_STATUS  = (byte)'S';
+    public static byte AT_STATUS_ON  = (byte)'N';
+    public static byte AT_STATUS_OFF = (byte)'F';
+
+
 }
