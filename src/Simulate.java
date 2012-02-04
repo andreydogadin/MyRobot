@@ -14,6 +14,7 @@ public class Simulate {
     public static void main(String[] args) throws Exception {
 
         MyRobot.getInstance();
+        MyRobot.getInstance().openPorts();
 
         new MaintainThread();
 

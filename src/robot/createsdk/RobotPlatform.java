@@ -25,8 +25,10 @@ public class RobotPlatform implements SerialPortEventListener{
 
     public RobotPlatform() {
         robotComPort = new MyComPort(RobotConsts.ROBOT_COM_PORT);
-        robotComPort.open();
         atComPort = new MyComPort(RobotConsts.AT_COM_PORT);
+    }
+    public void openPorts(){
+        robotComPort.open();
         atComPort.open();
     }
 
@@ -128,6 +130,7 @@ public class RobotPlatform implements SerialPortEventListener{
     }
 
     public synchronized void parseSensors(byte[] sensors) {
+        if (sensors == null || sensors.length != 26) return;
         akkuTemp = Utils.byteToUByte(sensors[21]);
         int akkuTotal = Utils.uBytesToInt(Utils.byteToUByte(sensors[22]), Utils.byteToUByte(sensors[23]));
         int akkuState = Utils.uBytesToInt(Utils.byteToUByte(sensors[24]), Utils.byteToUByte(sensors[25]));
@@ -136,7 +139,7 @@ public class RobotPlatform implements SerialPortEventListener{
     }
 
     public synchronized void parseOnOff(byte[] data) {
-        if (data.length < 0) return;
+        if (data == null || data.length < 0) return;
         if (data[0] == CreateCOI.AT_STATUS_ON)
             this.platformOn = true;
         if (data[0] == CreateCOI.AT_STATUS_OFF)
@@ -177,7 +180,7 @@ public class RobotPlatform implements SerialPortEventListener{
                     this.parseSensors(data);
                 }
                 if (event.getPortName().equalsIgnoreCase(RobotConsts.AT_COM_PORT)){
-                    data = this.robotComPort.readBytes();
+                    data = this.atComPort.readBytes();
                     parseOnOff(data);
                 }
                 logAfterRelieve(data);

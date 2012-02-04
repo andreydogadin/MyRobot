@@ -14,7 +14,7 @@ import java.util.HashMap;
  */
 public class RobotConsts {
     public enum ExecutionMode {DO_NOTHING, SIMULATE, EXECUTE};
-    public static String ROBOT_COM_PORT = "COM4";
+    public static String ROBOT_COM_PORT = "COM5";
     public static String AT_COM_PORT = "COM1";
     public static HashMap<String, Integer> portSpeeds = new HashMap<String, Integer>();
     static {

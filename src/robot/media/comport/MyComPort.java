@@ -23,10 +23,10 @@ public class MyComPort extends SerialPort {
     public boolean open() {
         boolean result = false;
         try {
+            result = this.openPort();
             this.setParams(RobotConsts.portSpeeds.get(this.portName), SerialPort.DATABITS_8, SerialPort.STOPBITS_1, SerialPort.PARITY_NONE);
             this.setFlowControlMode(SerialPort.FLOWCONTROL_NONE);
             this.addEventListener(MyRobot.getInstance(), SerialPort.MASK_RXCHAR);
-            result = this.openPort();
         } catch (Exception ex) {
             ex.printStackTrace();
         }
