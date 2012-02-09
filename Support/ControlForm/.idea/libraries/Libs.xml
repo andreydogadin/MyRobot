@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Libs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/swt.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/skype_win32.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../External/skype/src" />
+    </SOURCES>
+  </library>
+</component>
