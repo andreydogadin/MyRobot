@@ -40,5 +40,11 @@ public class CreateCOI {
     public static byte AT_STATUS_ON  = (byte)'N';
     public static byte AT_STATUS_OFF = (byte)'F';
 
+    public static byte AT_CAM_X = (byte)'X';
+    public static byte AT_CAM_Y = (byte)'Y';
+
+    public static byte AT_CAM_PLUS = (byte)'+';
+    public static byte AT_CAM_MINUS = (byte)'-';
+    public static byte AT_CAM_RESET = (byte)'0';
 
 }

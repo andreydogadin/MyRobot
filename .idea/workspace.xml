@@ -19,6 +19,21 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <line_breakpoints>
+      <breakpoint url="file://$PROJECT_DIR$/src/commands/commandsImpl/MoveCam.java" line="18" class="commands.commandsImpl.MoveCam" package="commands.commandsImpl">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <breakpoint_any>
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -59,10 +74,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MaintainThread.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="MaintainThread.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/robothreads/MaintainThread.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="18" selection-start="1220" selection-end="1220" vertical-scroll-proportion="0.7309237">
+            <state line="34" column="30" selection-start="958" selection-end="958" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -80,10 +95,8 @@
       <file leaf-file-name="Simulate.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Simulate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="39" selection-start="293" selection-end="293" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="16" column="34" selection-start="359" selection-end="359" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -109,7 +122,45 @@
       <file leaf-file-name="RobotPlatform.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/robot/createsdk/RobotPlatform.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="185" column="36" selection-start="5735" selection-end="5735" vertical-scroll-proportion="0.0">
+            <state line="108" column="0" selection-start="2973" selection-end="2973" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RobotConsts.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/utils/RobotConsts.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="16" selection-start="696" selection-end="696" vertical-scroll-proportion="0.76371306">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MoveCam.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/commands/commandsImpl/MoveCam.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="38" selection-start="520" selection-end="520" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommandDispatcher.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/commands/CommandDispatcher.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="42" column="0" selection-start="1089" selection-end="1089" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CreateCOI.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/robot/createsdk/CreateCOI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="47" column="49" selection-start="1622" selection-end="1622" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -129,8 +180,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/robot/createsdk/CreateCOI.java" />
-        <option value="$PROJECT_DIR$/src/commands/commandsImpl/RobotOnOff.java" />
         <option value="$PROJECT_DIR$/src/commands/commandsImpl/RobotCheckSensors.java" />
         <option value="$PROJECT_DIR$/src/commands/commandsImpl/RobotGetOnOff.java" />
         <option value="$PROJECT_DIR$/src/robot/MyRobot.java" />
@@ -140,11 +189,13 @@
         <option value="$PROJECT_DIR$/src/commands/commandsImpl/RobotStart.java" />
         <option value="$PROJECT_DIR$/src/commands/datatypes/EMail.java" />
         <option value="$PROJECT_DIR$/src/commands/commandsImpl/CheckMail.java" />
-        <option value="$PROJECT_DIR$/src/utils/RobotConsts.java" />
         <option value="$PROJECT_DIR$/src/robot/media/comport/MyComPort.java" />
-        <option value="$PROJECT_DIR$/src/robot/createsdk/RobotPlatform.java" />
         <option value="$PROJECT_DIR$/src/robothreads/MaintainThread.java" />
+        <option value="$PROJECT_DIR$/src/robot/createsdk/CreateCOI.java" />
+        <option value="$PROJECT_DIR$/src/robot/createsdk/RobotPlatform.java" />
+        <option value="$PROJECT_DIR$/src/commands/commandsImpl/MoveCam.java" />
         <option value="$PROJECT_DIR$/src/Simulate.java" />
+        <option value="$PROJECT_DIR$/src/utils/RobotConsts.java" />
       </list>
     </option>
   </component>
@@ -185,7 +236,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Favorites" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -215,100 +265,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyRobot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="workflow" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyRobot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="workflow" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="workflowsImpl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyRobot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utils" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyRobot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyRobot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="robothreads" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -392,40 +348,10 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyRobot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="libs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyRobot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="libs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="log4j-1.2.16.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Favorites" />
       <pane id="PackagesPane">
         <subPane>
           <PATH>
@@ -440,7 +366,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -815,22 +740,22 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="81" y="0" width="943" height="600" extended-state="0" />
+    <frame x="77" y="-4" width="951" height="608" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24974412" sideWeight="0.65" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42768595" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42682928" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30785123" sideWeight="0.99693877" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3255814" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25812745" sideWeight="0.32947975" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32886598" sideWeight="0.6511628" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25925925" sideWeight="0.63429755" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32480535" sideWeight="0.63617885" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36570248" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36382115" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3158602" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -890,116 +815,100 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/commands/commandsImpl/RobotChangeOnOff.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="13" selection-start="258" selection-end="258" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/robot/media/comport/MyComPort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="542" selection-end="542" vertical-scroll-proportion="0.9166667">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/RobotConsts.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="47" selection-start="405" selection-end="405" vertical-scroll-proportion="0.041666668">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/commands/commandsImpl/RobotStart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="13" selection-start="363" selection-end="363" vertical-scroll-proportion="0.61959">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/commands/commandsImpl/RobotDrive.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="16" selection-start="350" selection-end="350" vertical-scroll-proportion="0.54214126">
-          <folding />
-        </state>
+        <state line="15" column="16" selection-start="350" selection-end="350" vertical-scroll-proportion="0.54214126" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/commands/commandsImpl/RobotGetStatus.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="45" selection-start="387" selection-end="387" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="16" column="45" selection-start="387" selection-end="387" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/commands/commandsImpl/RobotGetOnOff.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="18" selection-start="387" selection-end="387" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="16" column="18" selection-start="387" selection-end="387" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/robot/createsdk/CreateCOI.java">
+    <entry file="jar://$PROJECT_DIR$/libs/jssc.jar!/jssc/SerialPort.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="23" selection-start="964" selection-end="964" vertical-scroll-proportion="0.332">
+        <state line="182" column="21" selection-start="8512" selection-end="8512" vertical-scroll-proportion="-2.56" />
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/libs/log4j-1.2.16.jar!/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.7751004" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/robot/controller/RobotFaceController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="16" selection-start="1027" selection-end="1027" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/commands/commandsImpl/RobotCheckSensors.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="22" selection-start="366" selection-end="366" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/robot/MyRobot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="38" selection-start="673" selection-end="673" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/robothreads/MaintainThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="30" selection-start="958" selection-end="958" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Simulate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="39" selection-start="293" selection-end="293" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/robot/controller/RobotFaceController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="16" selection-start="1027" selection-end="1027" vertical-scroll-proportion="0.0">
+        <state line="16" column="34" selection-start="359" selection-end="359" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/commands/commandsImpl/RobotCheckSensors.java">
+    <entry file="file://$PROJECT_DIR$/src/robot/media/comport/MyComPort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="22" selection-start="366" selection-end="366" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/robot/MyRobot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="38" selection-start="673" selection-end="673" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/libs/jssc.jar!/jssc/SerialPort.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="182" column="21" selection-start="8512" selection-end="8512" vertical-scroll-proportion="-2.56">
+        <state line="22" column="19" selection-start="487" selection-end="487" vertical-scroll-proportion="0.33333334">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/robot/createsdk/RobotPlatform.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="185" column="36" selection-start="5735" selection-end="5735" vertical-scroll-proportion="0.0">
+        <state line="108" column="0" selection-start="2973" selection-end="2973" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/libs/log4j-1.2.16.jar!/log4j.properties">
+    <entry file="file://$PROJECT_DIR$/src/commands/CommandDispatcher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.7751004">
+        <state line="42" column="0" selection-start="1089" selection-end="1089" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/robothreads/MaintainThread.java">
+    <entry file="file://$PROJECT_DIR$/src/commands/commandsImpl/MoveCam.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="18" selection-start="1220" selection-end="1220" vertical-scroll-proportion="0.7309237">
+        <state line="19" column="38" selection-start="520" selection-end="520" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/robot/createsdk/CreateCOI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="49" selection-start="1622" selection-end="1622" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/RobotConsts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="16" selection-start="696" selection-end="696" vertical-scroll-proportion="0.76371306">
           <folding />
         </state>
       </provider>

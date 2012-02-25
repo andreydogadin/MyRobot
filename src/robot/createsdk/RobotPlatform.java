@@ -101,6 +101,13 @@ public class RobotPlatform implements SerialPortEventListener{
         this.executeRobot(command);
     }
 
+    public void moveCam(byte cam, byte command){
+        byte [] camArr = {cam};
+        byte [] commandArr = {command};
+        this.executeAt(camArr);
+        this.executeAt(commandArr);
+    }
+
     public void playLeds() {
         byte[] advLed = {CreateCOI.LEDS, CreateCOI.LED_ADV, 0, 0};
         byte[] playLed = {CreateCOI.LEDS, CreateCOI.LED_PLAY, 0, 0};

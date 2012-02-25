@@ -16,7 +16,7 @@ public class Simulate {
         MyRobot.getInstance();
         MyRobot.getInstance().openPorts();
 
-        new MaintainThread();
+        //new MaintainThread();
 
         //Thread that reads commands from console and pass them to dispatcher
         new ConsoleCommandThread();
