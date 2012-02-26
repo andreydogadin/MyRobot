@@ -22,7 +22,7 @@ import java.io.File;
 
             public ControlPanel() {
 
-                this.setLayout(new GridLayout(3,4));
+                this.setLayout(new GridLayout(5,4));
 
                 add(new DummyButton()); add(new RobotControlButton("Drive")); add(new DummyButton());
                 add(new RobotControlButton("On/Off", "RobotChangeOnOff", false));
@@ -30,5 +30,10 @@ import java.io.File;
                 add(new RobotControlButton("Status", "RobotGetStatus", false));
                 add(new DummyButton()); add (new RobotControlButton("Back")); add(new DummyButton());
                 add(new RobotControlButton("Start", "RobotStart", false));
+
+                add(new RobotControlButton("X+", "MoveCam X+", false));add(new RobotControlButton("X-", "MoveCam X-", false));
+                add(new RobotControlButton("Y+", "MoveCam Y+", false));add(new RobotControlButton("Y-", "MoveCam Y-", false));
+                add(new DummyButton());add(new RobotControlButton("X0", "MoveCam X0", false));
+                add(new DummyButton());add(new RobotControlButton("Y0", "MoveCam Y0", false));
        }
     }
