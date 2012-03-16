@@ -17,7 +17,7 @@ import java.util.GregorianCalendar;
  */
 public class SetAlarm extends RobotCommand {
     @Override
-    public void execute(MyRobot robot) {
+    protected void executeCommand(MyRobot robot) {
         if (this.getParam().isEmpty())
             this.resultTarget.outResult("Please, specify time to alarm");
         else

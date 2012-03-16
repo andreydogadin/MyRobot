@@ -2,7 +2,6 @@ package commands.commandsImpl;
 
 import commands.RobotCommand;
 import robot.MyRobot;
-import utils.Utils;
 
 /**
  * Created by IntelliJ IDEA.
@@ -13,7 +12,7 @@ import utils.Utils;
  */
 public class RobotGetOnOff extends RobotCommand{
     @Override
-    public void execute(MyRobot robot) {
+    protected void executeCommand(MyRobot robot) {
         robot.getOnOff();
     }
 }

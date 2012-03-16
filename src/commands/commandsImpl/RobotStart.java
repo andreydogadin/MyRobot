@@ -12,7 +12,7 @@ import robot.MyRobot;
  */
 public class RobotStart extends RobotCommand {
 
-    public void execute(MyRobot robot) {
+    protected void executeCommand(MyRobot robot) {
         robot.start();
     }
 

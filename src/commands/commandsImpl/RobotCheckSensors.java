@@ -12,7 +12,7 @@ import robot.MyRobot;
  */
 public class RobotCheckSensors extends RobotCommand {
     @Override
-    public void execute(MyRobot robot) {
+    protected void executeCommand(MyRobot robot) {
         robot.checkSensors();
     }
 }

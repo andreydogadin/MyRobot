@@ -12,7 +12,7 @@ import utils.Utils;
  */
 public abstract class ExecRobotCommand extends RobotCommand{
     @Override
-    public void execute(MyRobot robot) {
+    protected void executeCommand(MyRobot robot) {
         String className = this.getClass().getSimpleName();
         Utils.exec(className, this.getParam());
     }

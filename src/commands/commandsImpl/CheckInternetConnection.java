@@ -15,7 +15,7 @@ import java.net.*;
  */
 public class CheckInternetConnection extends RobotCommand {
     @Override
-    public void execute(MyRobot robot) {
+    protected void executeCommand(MyRobot robot) {
         String urlRoute = "192.168.1.1";
         String urlInternet = "ya.ru";
         String result = "No network connection";

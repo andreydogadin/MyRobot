@@ -16,7 +16,7 @@ import java.util.Date;
  */
 public class Alarm extends RobotCommand {
     @Override
-    public void execute(MyRobot robot) {
+    protected void executeCommand(MyRobot robot) {
         Date alarmDate = null;
         this.resultTarget = SpeechTarget.getInstance();
         if (robot.getMemory().getCurrent(RobotConsts.MEMORY_ALARM_TIME)!=null)

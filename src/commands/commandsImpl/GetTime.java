@@ -15,7 +15,7 @@ import java.util.Calendar;
  */
 public class GetTime extends RobotCommand {
     @Override
-    public void execute(MyRobot robot) {
+    protected void executeCommand(MyRobot robot) {
         Calendar cal = Calendar.getInstance();
         SimpleDateFormat sdf = new SimpleDateFormat("HH:mm");
         String strDate = sdf.format(cal.getTime());

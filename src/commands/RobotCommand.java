@@ -18,6 +18,7 @@ import java.util.HashMap;
 public abstract class RobotCommand {
     protected Logger log;
     protected HashMap<String, String> params;
+    protected String validationMessage = "Parameter is invalid";
 
     public ResultTarget getResultTarget() {
         return resultTarget;
@@ -46,5 +47,19 @@ public abstract class RobotCommand {
             return this.params.get(RobotConsts.COMMAND_PARAM_1);
     }
 
-    abstract public void execute(MyRobot robot);
+    protected boolean validateParam(){
+        return true;
+    }
+
+    protected void executeCommand(MyRobot robot){
+
+    };
+
+    public void execute(MyRobot robot){
+        if (this.validateParam()){
+            this.executeCommand(robot);
+        } else {
+            resultTarget.outResult(validationMessage);
+        }
+    }
 }

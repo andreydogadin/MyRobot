@@ -47,4 +47,8 @@ public class CreateCOI {
     public static byte AT_CAM_MINUS = (byte)'-';
     public static byte AT_CAM_RESET = (byte)'0';
 
+    public static byte CMD_POWER = 'P';
+    public static byte CMD_ROBOT = 'R';
+    public static byte CMD_CAMERA = 'C';
+    public static byte CMD_RESET = 'Q';
 }

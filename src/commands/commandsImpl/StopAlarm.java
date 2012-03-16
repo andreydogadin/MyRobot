@@ -13,7 +13,7 @@ import utils.RobotConsts;
  */
 public class StopAlarm extends RobotCommand {
     @Override
-    public void execute(MyRobot robot) {
+    protected void executeCommand(MyRobot robot) {
         robot.getMemory().forgetCurrent(RobotConsts.MEMORY_ALARM_TIME);
     }
 }

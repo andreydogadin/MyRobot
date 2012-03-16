@@ -19,7 +19,7 @@ import java.io.InputStream;
  */
 public class GetWeather extends RobotCommand {
     @Override
-    public void execute(MyRobot robot) {
+    protected void executeCommand(MyRobot robot) {
         String result = "Sorry, no internet connection";
         if (robot.getMemory().getCurrent(RobotConsts.MEMORY_INTERNET_STATUS) != null)
         {
