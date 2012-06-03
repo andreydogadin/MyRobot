@@ -1,9 +1,5 @@
 package commands;
 
-import com.skype.Skype;
-import com.skype.SkypeException;
-
-import javax.swing.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
@@ -15,16 +11,16 @@ import java.awt.event.MouseListener;
  * To change this template use File | Settings | File Templates.
  */
 public class ButtonsListener implements MouseListener {
-    private static ICommandProcessor commandProcessor;
+    private static ICommandSender commandSender;
 
-    public static void setCommandProcessor(ICommandProcessor myCommandProcessor) {
-        commandProcessor = myCommandProcessor;
+    public static void setCommandSender(ICommandSender myCommandSender) {
+        commandSender = myCommandSender;
     }
 
     public void mousePressed(MouseEvent e) {
         String command = ((RobotControlButton)e.getSource()).getCommand();
         try{
-            commandProcessor.sendMessage(command);
+            commandSender.sendMessage(command);
         } catch (Exception ex){
             ex.printStackTrace();
         }
@@ -33,7 +29,7 @@ public class ButtonsListener implements MouseListener {
     public void mouseReleased(MouseEvent e) {
         if (((RobotControlButton)e.getSource()).isShouldStop())
             try{
-                commandProcessor.sendMessage("RobotStop");
+                commandSender.sendMessage("RobotStop");
             } catch (Exception ex){
                 ex.printStackTrace();
             }

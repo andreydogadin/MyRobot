@@ -1,8 +1,4 @@
-import com.skype.*;
-import commands.ButtonsListener;
-import commands.ICommandProcessor;
-import commands.SkypeLinuxCommandProcessor;
-import commands.SkypeWinCommandProcessor;
+import commands.*;
 import gui.ControlFrame;
 
 /**
@@ -14,9 +10,11 @@ import gui.ControlFrame;
  */
 public class ControlForm {
     public static void main(String[] args) throws Exception{
-        ICommandProcessor commandProcessor = new SkypeWinCommandProcessor();
-        ButtonsListener.setCommandProcessor(commandProcessor);
+        ICommandSender commandSender = new SocketCommandSender();
+        ButtonsListener.setCommandSender(commandSender);
 
         ControlFrame frame = new ControlFrame();
+
+        //commandSender.close();
     }
 }
