@@ -12,7 +12,7 @@ import robot.MyRobot;
  */
 public class RobotBack extends RobotCommand {
     @Override
-    public void execute(MyRobot robot) {
+    protected void executeCommand(MyRobot robot) {
         robot.back();
     }
 }

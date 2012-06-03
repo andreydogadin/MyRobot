@@ -16,26 +16,22 @@ import utils.Utils;
  */
 public class RobotPlatform implements SerialPortEventListener{
 
-    MyComPort robotComPort;
-    MyComPort atComPort;
+    MyComPort commandComPort;
 
     protected int platformAkku;
     protected int akkuTemp;
     protected boolean platformOn;
 
     public RobotPlatform() {
-        robotComPort = new MyComPort(RobotConsts.ROBOT_COM_PORT);
-        atComPort = new MyComPort(RobotConsts.AT_COM_PORT);
+        commandComPort = new MyComPort(RobotConsts.AT_COM_PORT);
     }
     public void openPorts(){
-        robotComPort.open();
-        atComPort.open();
+        commandComPort.open();
     }
 
     public void release() {
         this.stop();
-        this.robotComPort.release();
-        this.atComPort.release();
+        this.commandComPort.release();
     }
 
     public Integer getPlatformAkkuState() {
@@ -44,51 +40,51 @@ public class RobotPlatform implements SerialPortEventListener{
 
     public void start(){
         byte[] command = {CreateCOI.START, CreateCOI.FULL};
-        this.executeRobot(command);
+        this.executeRobotCommand(command);
     }
 
     public void drive() {
         byte[] command = {CreateCOI.DRIVE_DIRECT, (byte) 0, CreateCOI.SPEED, (byte) 0, CreateCOI.SPEED};
-        this.executeRobot(command);
+        this.executeRobotCommand(command);
     }
 
     public void back() {
         byte[] command = {CreateCOI.DRIVE_DIRECT, (byte) 255, (byte) 206, (byte) 255, (byte) 206};
-        this.executeRobot(command);
+        this.executeRobotCommand(command);
     }
 
 
     public void stop() {
         byte[] command = {CreateCOI.DRIVE_DIRECT, (byte) 0, (byte) 0, (byte) 0, (byte) 0};
-        this.executeRobot(command);
+        this.executeRobotCommand(command);
     }
 
 
     public void rotateLeft() {
         byte[] command = {CreateCOI.DRIVE_DIRECT, (byte) 0, 50, (byte) 255, (byte)205};
-        this.executeRobot(command);
+        this.executeRobotCommand(command);
     }
     
     public void rotateRight() {
         byte[] command = {CreateCOI.DRIVE_DIRECT, (byte)255, (byte)205, (byte) 0, 50};
-        this.executeRobot(command);
+        this.executeRobotCommand(command);
 
     }
 
     public void demo(byte mode) {
         byte[] command = {CreateCOI.DEMO, mode};
-        this.executeAt(command);
+        this.executePowerCommand(command);
     }
 
     public void changeOnOff() {
         byte[] command = {CreateCOI.AT_SET_STATUS};
-        this.executeAt(command);
+        this.executePowerCommand(command);
         Utils.sleep(5000);
     }
 
     public void getOnOff() {
         byte[] command = {CreateCOI.AT_GET_STATUS};
-        this.executeAt(command);
+        this.executePowerCommand(command);
     }
 
     public void playMusic() {
@@ -96,16 +92,14 @@ public class RobotPlatform implements SerialPortEventListener{
                   24, 89, 12, 91, 24, 91, 12, 9, 12, 89,
                   12,87, 12, 89, 12, 91, 12, 89, 12, 87,
                   24, 86, 12, 87, 48};
-        this.executeRobot(setMusic);
+        this.executeRobotCommand(setMusic);
         byte[] command = {CreateCOI.PLAY_MUSIC, 0};
-        this.executeRobot(command);
+        this.executeRobotCommand(command);
     }
 
     public void moveCam(byte cam, byte command){
-        byte [] camArr = {cam};
-        byte [] commandArr = {command};
-        this.executeAt(camArr);
-        this.executeAt(commandArr);
+        byte [] commandArr = {cam, command};
+        this.executeCameraCommand(commandArr);
     }
 
     public void playLeds() {
@@ -114,22 +108,22 @@ public class RobotPlatform implements SerialPortEventListener{
         byte[] pwrLed = {CreateCOI.LEDS, CreateCOI.LED_NOTHING, (byte) 255, (byte)255};
         byte[] zeroLed = {CreateCOI.LEDS, CreateCOI.LED_NOTHING, 0, 0};
 
-        this.executeRobot(zeroLed);
+        this.executeRobotCommand(zeroLed);
         Utils.sleep(100);
-        this.executeRobot(advLed);
+        this.executeRobotCommand(advLed);
         Utils.sleep(100);
-        this.executeRobot(playLed);
+        this.executeRobotCommand(playLed);
         Utils.sleep(100);
-        this.executeRobot(pwrLed);
+        this.executeRobotCommand(pwrLed);
         Utils.sleep(100);
-        this.executeRobot(zeroLed);
+        this.executeRobotCommand(zeroLed);
     }
 
 
     public void checkSensors()
     {
         byte[] command = {CreateCOI.SENSORS, 0};
-        this.executeRobot(command);
+        this.executeRobotCommand(command);
     }
 
     public Boolean isPlatformOn() {
@@ -154,43 +148,49 @@ public class RobotPlatform implements SerialPortEventListener{
     }
 
 
-    public synchronized void executeRobot(byte[] command) {
+    private synchronized void executeRobotCommand(byte[] command) {
+        executeCommand(command, CreateCOI.CMD_ROBOT, CreateCOI.CMD_RESET);
+    }
+
+    private synchronized void executePowerCommand(byte[] command) {
+        executeCommand(command, CreateCOI.CMD_POWER, CreateCOI.CMD_RESET);
+    }
+
+    private synchronized void executeCameraCommand(byte[] command) {
+        executeCommand(command, CreateCOI.CMD_CAMERA, CreateCOI.CMD_RESET);
+    }
+
+    private synchronized void executeCommand(byte[] command, byte startByte, byte endByte){
         try {
             logBeforeSend(command);
-            robotComPort.writeBytes(command);
+            commandComPort.writeByte(startByte);
+            commandComPort.writeBytes(command);
+            commandComPort.writeByte(endByte);
         } catch (SerialPortException e) {
             e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
         }
     }
 
-    public synchronized void executeAt(byte[] command) {
-        try {
-            logBeforeSend(command);
-            atComPort.writeBytes(command);
-        } catch (SerialPortException e) {
-            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
-        }
-    }
-    
     public void logBeforeSend(byte [] data){
     }
 
-    public void logAfterRelieve(byte [] data){
+    public void logAfterRecieve(byte[] data){
     }
 
     public void serialEvent(SerialPortEvent event) {
         if(event.isRXCHAR() && event.getEventValue() > 0){
             try {
                 byte [] data = null;
-                if (event.getPortName().equalsIgnoreCase(RobotConsts.ROBOT_COM_PORT)){
-                    data = this.robotComPort.readBytes();
-                    this.parseSensors(data);
-                }
-                if (event.getPortName().equalsIgnoreCase(RobotConsts.AT_COM_PORT)){
-                    data = this.atComPort.readBytes();
-                    parseOnOff(data);
-                }
-                logAfterRelieve(data);
+//                if (event.getPortName().equalsIgnoreCase(RobotConsts.ROBOT_COM_PORT)){
+//                    data = this.robotComPort.readBytes();
+//                    this.parseSensors(data);
+//                }
+//                if (event.getPortName().equalsIgnoreCase(RobotConsts.AT_COM_PORT)){
+//                    data = this.atComPort.readBytes();
+//                    parseOnOff(data);
+//                }
+                data = this.commandComPort.readBytes();
+                logAfterRecieve(data);
             }
             catch (SerialPortException ex) {
                 System.out.println(ex);

@@ -12,7 +12,7 @@ import robot.MyRobot;
  */
 public class Test extends RobotCommand {
     @Override
-    public void execute(MyRobot robot) {
+    protected void executeCommand(MyRobot robot) {
         //robot.playLeds();
         //throw new NullPointerException("Test");
     }

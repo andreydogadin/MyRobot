@@ -13,7 +13,7 @@ import robot.MyRobot;
 public class RobotGetStatus extends RobotCommand {
 
     @Override
-    public void execute(MyRobot robot) {
+    protected void executeCommand(MyRobot robot) {
         this.resultTarget.outResult(robot.getStatus());
     }
 }

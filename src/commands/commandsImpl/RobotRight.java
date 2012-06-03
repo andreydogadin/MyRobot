@@ -11,7 +11,7 @@ import robot.MyRobot;
  * To change this template use File | Settings | File Templates.
  */
 public class RobotRight extends RobotCommand {
-    public void execute(MyRobot robot) {
+    protected void executeCommand(MyRobot robot) {
         robot.rotateRight();
     }
 }

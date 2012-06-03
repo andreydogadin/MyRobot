@@ -13,7 +13,7 @@ import utils.Utils;
  */
 public class Exit extends RobotCommand {
 
-    public void execute(MyRobot robot) {
+    protected void executeCommand(MyRobot robot) {
 
         this.resultTarget.outResult(Utils.getDoneAnswer());
         robot.release();

@@ -9,9 +9,6 @@ import robothreads.VideoRecognitionThread;
 import utils.RobotConsts;
 import workflow.WorkflowManager;
 
-import javax.wsdl.Input;
-import java.io.File;
-
 /**
  * Created by IntelliJ IDEA.
  * User: andrey.dogadin
@@ -22,7 +19,7 @@ import java.io.File;
 public class SetCurrentPerson extends RobotCommand {
 
     @Override
-    public void execute(MyRobot robot) {
+    protected void executeCommand(MyRobot robot) {
         if (MyRobot.getInstance().getMemory().getCurrent(RobotConsts.CURRENT_VIEW_PERSON) != null){
             InputString is = new InputString(MyRobot.getInstance().getMemory().getCurrent(RobotConsts.CURRENT_VIEW_PERSON).getValue().toString(), this.resultTarget);
             WorkflowManager.process(is);

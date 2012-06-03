@@ -17,7 +17,7 @@ import java.util.ArrayList;
  */
 public class CheckMail extends RobotCommand{
     @Override
-    public void execute(MyRobot robot) {
+    protected void executeCommand(MyRobot robot) {
         if (this.getParam().isEmpty())
             this.resultTarget.outResult("No person was defined");
         else {

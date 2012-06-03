@@ -13,10 +13,10 @@ import robot.MyRobot;
 public class PlayMusic extends ExecRobotCommand {
 
     @Override
-    public void execute(MyRobot robot) {
+    protected void executeCommand(MyRobot robot) {
         if (this.getParam().isEmpty())
             this.resultTarget.outResult("What kind of music you want to listen?");
         else
-            super.execute(robot);    //To change body of overridden methods use File | Settings | File Templates.
+            super.executeCommand(robot);    //To change body of overridden methods use File | Settings | File Templates.
     }
 }

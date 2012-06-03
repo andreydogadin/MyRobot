@@ -2,9 +2,6 @@ package commands.commandsImpl;
 
 import commands.RobotCommand;
 import robot.MyRobot;
-import utils.RobotConsts;
-
-import java.io.File;
 
 /**
  * Created by IntelliJ IDEA.
@@ -15,7 +12,7 @@ import java.io.File;
  */
 public class LearnFace extends RobotCommand {
     @Override
-    public void execute(MyRobot robot) {
+    protected void executeCommand(MyRobot robot) {
         robot.initVideo();
         robot.getVideoRecognizer().learnFace(this.getParam());
     }

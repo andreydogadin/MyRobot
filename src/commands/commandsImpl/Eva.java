@@ -14,7 +14,7 @@ import utils.Utils;
  */
 public class Eva extends RobotCommand {
     @Override
-    public void execute(MyRobot robot) {
+    protected void executeCommand(MyRobot robot) {
         this.resultTarget.outResult(Utils.getReadyAnswer());
         robot.getMemory().putCurrent(RobotConsts.ACCEPT_VOICE_COMMAND, new Boolean(true), 30);
     }
